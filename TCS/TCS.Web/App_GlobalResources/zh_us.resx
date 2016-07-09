@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="article" xml:space="preserve">
+    <value>景区资讯</value>
+  </data>
+  <data name="article_us" xml:space="preserve">
+    <value>Article</value>
+  </data>
+  <data name="cmpldynamics" xml:space="preserve">
+    <value>投诉动态</value>
+  </data>
+  <data name="cmpltdynamics_us" xml:space="preserve">
+    <value>Cmplt&amp;Dynamics</value>
+  </data>
+  <data name="cmplttoday_us" xml:space="preserve">
+    <value>Cmplt&amp;Today</value>
+  </data>
+  <data name="cmplttotal" xml:space="preserve">
+    <value>投诉总量</value>
+  </data>
+  <data name="cmplttotal_us" xml:space="preserve">
+    <value>Cmplt&amp;Total</value>
+  </data>
+  <data name="complaint" xml:space="preserve">
+    <value>投诉信息</value>
+  </data>
+  <data name="complaint_us" xml:space="preserve">
+    <value>cmplt&amp;Info</value>
+  </data>
+  <data name="contactus" xml:space="preserve">
+    <value>联系我们</value>
+  </data>
+  <data name="contactus_us" xml:space="preserve">
+    <value>ContactUs</value>
+  </data>
+  <data name="feedback" xml:space="preserve">
+    <value>意见反馈</value>
+  </data>
+  <data name="feedback_us" xml:space="preserve">
+    <value>Feedback</value>
+  </data>
+  <data name="hotcomplaint" xml:space="preserve">
+    <value>热点投诉</value>
+  </data>
+  <data name="hotcomplaint_us" xml:space="preserve">
+    <value>Cmplt&amp;Hot</value>
+  </data>
+  <data name="index" xml:space="preserve">
+    <value>首页</value>
+  </data>
+  <data name="index_us" xml:space="preserve">
+    <value>Index</value>
+  </data>
+  <data name="latestnotice" xml:space="preserve">
+    <value>最新公告</value>
+  </data>
+  <data name="latestnotice_us" xml:space="preserve">
+    <value>Latest&amp;Notice</value>
+  </data>
+  <data name="login" xml:space="preserve">
+    <value>登陆</value>
+  </data>
+  <data name="login_us" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="logout" xml:space="preserve">
+    <value>注销</value>
+  </data>
+  <data name="logout_us" xml:space="preserve">
+    <value>Logout</value>
+  </data>
+  <data name="more" xml:space="preserve">
+    <value>更多</value>
+  </data>
+  <data name="more_us" xml:space="preserve">
+    <value>More</value>
+  </data>
+  <data name="notice" xml:space="preserve">
+    <value>投诉须知</value>
+  </data>
+  <data name="notice_us" xml:space="preserve">
+    <value>notice</value>
+  </data>
+  <data name="publish" xml:space="preserve">
+    <value>发表投诉</value>
+  </data>
+  <data name="publish_us" xml:space="preserve">
+    <value>Publish</value>
+  </data>
+  <data name="register" xml:space="preserve">
+    <value>注册</value>
+  </data>
+  <data name="register_us" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="statistics" xml:space="preserve">
+    <value>投诉统计</value>
+  </data>
+  <data name="statistics_us" xml:space="preserve">
+    <value>Statistics</value>
+  </data>
+  <data name="time" xml:space="preserve">
+    <value>时间</value>
+  </data>
+  <data name="time_us" xml:space="preserve">
+    <value>TIME</value>
+  </data>
+  <data name="title" xml:space="preserve">
+    <value>标题</value>
+  </data>
+  <data name="title_us" xml:space="preserve">
+    <value>TITLE</value>
+  </data>
+  <data name="today" xml:space="preserve">
+    <value>今日投诉</value>
+  </data>
+  <data name="type" xml:space="preserve">
+    <value>类型</value>
+  </data>
+  <data name="type_us" xml:space="preserve">
+    <value>TYPE</value>
+  </data>
+  <data name="user" xml:space="preserve">
+    <value>投诉人</value>
+  </data>
+  <data name="usercenter" xml:space="preserve">
+    <value>个人中心</value>
+  </data>
+  <data name="usercenter_us" xml:space="preserve">
+    <value>UserCenter</value>
+  </data>
+  <data name="userlogin" xml:space="preserve">
+    <value>用户登录</value>
+  </data>
+  <data name="userlogin_us" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="user_us" xml:space="preserve">
+    <value>USER</value>
+  </data>
+  <data name="welcome" xml:space="preserve">
+    <value>欢迎来到七星景区旅游投诉网</value>
+  </data>
+  <data name="welcome_us" xml:space="preserve">
+    <value>Welcome to Qi Xing LYTSW</value>
+  </data>
+  <data name="accountcenter" xml:space="preserve">
+    <value>账户中心</value>
+  </data>
+  <data name="accountcenter_us" xml:space="preserve">
+    <value>Account&amp;Center</value>
+  </data>
+  <data name="address" xml:space="preserve">
+    <value>景区地址</value>
+  </data>
+  <data name="address_us" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="agree" xml:space="preserve">
+    <value>我已阅读并同意</value>
+  </data>
+  <data name="agreement" xml:space="preserve">
+    <value>《旅游投诉网使用协议》</value>
+  </data>
+  <data name="agreement_us" xml:space="preserve">
+    <value>" the agreement of the LYTSW "</value>
+  </data>
+  <data name="agree_us" xml:space="preserve">
+    <value>I agreed to</value>
+  </data>
+  <data name="all" xml:space="preserve">
+    <value>全部</value>
+  </data>
+  <data name="all_us" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="cmplt" xml:space="preserve">
+    <value>投诉</value>
+  </data>
+  <data name="cmpltresolved" xml:space="preserve">
+    <value>已回复总量</value>
+  </data>
+  <data name="cmpltresolved_us" xml:space="preserve">
+    <value>Cmplt&amp;Solved</value>
+  </data>
+  <data name="cmpltstatus" xml:space="preserve">
+    <value>投诉状态</value>
+  </data>
+  <data name="cmpltstatus_us" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="cmplttime" xml:space="preserve">
+    <value>投诉时间</value>
+  </data>
+  <data name="cmplttime_us" xml:space="preserve">
+    <value>Submit Time</value>
+  </data>
+  <data name="cmplttype" xml:space="preserve">
+    <value>投诉类型</value>
+  </data>
+  <data name="cmplttype_us" xml:space="preserve">
+    <value>Tpye</value>
+  </data>
+  <data name="cmplt_us" xml:space="preserve">
+    <value>complaint</value>
+  </data>
+  <data name="comment" xml:space="preserve">
+    <value>待评价投诉</value>
+  </data>
+  <data name="comments" xml:space="preserve">
+    <value>评论</value>
+  </data>
+  <data name="comments_us" xml:space="preserve">
+    <value>comments</value>
+  </data>
+  <data name="comment_us" xml:space="preserve">
+    <value>Commenting</value>
+  </data>
+  <data name="complaintlabel" xml:space="preserve">
+    <value>投诉标签</value>
+  </data>
+  <data name="complaintlabel_us" xml:space="preserve">
+    <value>Cmplt&amp;Label</value>
+  </data>
+  <data name="consult" xml:space="preserve">
+    <value>咨询</value>
+  </data>
+  <data name="consult_us" xml:space="preserve">
+    <value>consult</value>
+  </data>
+  <data name="contacttel" xml:space="preserve">
+    <value>联系电话</value>
+  </data>
+  <data name="contacttel_us" xml:space="preserve">
+    <value>Telephone</value>
+  </data>
+  <data name="cpassword" xml:space="preserve">
+    <value>确认密码</value>
+  </data>
+  <data name="cpassword_us" xml:space="preserve">
+    <value>ConfirmPassword</value>
+  </data>
+  <data name="disctime" xml:space="preserve">
+    <value>评论时间</value>
+  </data>
+  <data name="disctime_us" xml:space="preserve">
+    <value>Comment Time</value>
+  </data>
+  <data name="discuss" xml:space="preserve">
+    <value>我的评论</value>
+  </data>
+  <data name="discuss_us" xml:space="preserve">
+    <value>My Discuss</value>
+  </data>
+  <data name="editinfo" xml:space="preserve">
+    <value>修改个人信息</value>
+  </data>
+  <data name="editinfo_us" xml:space="preserve">
+    <value>Edit Personal Info</value>
+  </data>
+  <data name="email" xml:space="preserve">
+    <value>邮箱</value>
+  </data>
+  <data name="email_us" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="exist" xml:space="preserve">
+    <value>已有账号，请直接</value>
+  </data>
+  <data name="exist_us" xml:space="preserve">
+    <value>Existing account, please direct</value>
+  </data>
+  <data name="feedtime" xml:space="preserve">
+    <value>反馈时间</value>
+  </data>
+  <data name="feedtime_us" xml:space="preserve">
+    <value>Feedback Time</value>
+  </data>
+  <data name="finished" xml:space="preserve">
+    <value>已完结投诉</value>
+  </data>
+  <data name="finished_us" xml:space="preserve">
+    <value>Finished</value>
+  </data>
+  <data name="floor" xml:space="preserve">
+    <value>楼</value>
+  </data>
+  <data name="floor_us" xml:space="preserve">
+    <value>floor</value>
+  </data>
+  <data name="forgetpwd" xml:space="preserve">
+    <value>忘记密码</value>
+  </data>
+  <data name="forgetpwd_us" xml:space="preserve">
+    <value>Forget  Password</value>
+  </data>
+  <data name="infoclassification" xml:space="preserve">
+    <value>信息分类</value>
+  </data>
+  <data name="infoclassification_us" xml:space="preserve">
+    <value>Info&amp;Classification</value>
+  </data>
+  <data name="loginway" xml:space="preserve">
+    <value>您也可以用以下方式登录：</value>
+  </data>
+  <data name="loginway_us" xml:space="preserve">
+    <value>You can also login in the following way:</value>
+  </data>
+  <data name="logontime" xml:space="preserve">
+    <value>上次登录时间</value>
+  </data>
+  <data name="logontime_us" xml:space="preserve">
+    <value>Last logon time</value>
+  </data>
+  <data name="month" xml:space="preserve">
+    <value>本月</value>
+  </data>
+  <data name="month_us" xml:space="preserve">
+    <value>Month</value>
+  </data>
+  <data name="mycmplt" xml:space="preserve">
+    <value>我的投诉</value>
+  </data>
+  <data name="mycmplt_us" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="myfeedback" xml:space="preserve">
+    <value>我的反馈</value>
+  </data>
+  <data name="myfeedback_us" xml:space="preserve">
+    <value>My Feedback</value>
+  </data>
+  <data name="nickname" xml:space="preserve">
+    <value>昵称</value>
+  </data>
+  <data name="nickname_us" xml:space="preserve">
+    <value>NickName</value>
+  </data>
+  <data name="noexist" xml:space="preserve">
+    <value>还没有账号，请直接</value>
+  </data>
+  <data name="noexist_us" xml:space="preserve">
+    <value>If no account, please directly</value>
+  </data>
+  <data name="officalresponse" xml:space="preserve">
+    <value>景区回复</value>
+  </data>
+  <data name="officalresponse_us" xml:space="preserve">
+    <value>Tourism Response</value>
+  </data>
+  <data name="password" xml:space="preserve">
+    <value>密码</value>
+  </data>
+  <data name="password_us" xml:space="preserve">
+    <value>password</value>
+  </data>
+  <data name="personalinfo" xml:space="preserve">
+    <value>个人信息</value>
+  </data>
+  <data name="personalinfo_us" xml:space="preserve">
+    <value>Info&amp;Personal</value>
+  </data>
+  <data name="processing" xml:space="preserve">
+    <value>待处理投诉</value>
+  </data>
+  <data name="processing_us" xml:space="preserve">
+    <value>Processing</value>
+  </data>
+  <data name="realname" xml:space="preserve">
+    <value>真实姓名</value>
+  </data>
+  <data name="realname_us" xml:space="preserve">
+    <value>RealName</value>
+  </data>
+  <data name="regtime" xml:space="preserve">
+    <value>注册时间</value>
+  </data>
+  <data name="regtime_us" xml:space="preserve">
+    <value>RegTime</value>
+  </data>
+  <data name="remember" xml:space="preserve">
+    <value>记住密码</value>
+  </data>
+  <data name="remember_us" xml:space="preserve">
+    <value>Remember Me</value>
+  </data>
+  <data name="reply" xml:space="preserve">
+    <value>我的回信</value>
+  </data>
+  <data name="reply_us" xml:space="preserve">
+    <value>Reply</value>
+  </data>
+  <data name="responsetime" xml:space="preserve">
+    <value>回复时间</value>
+  </data>
+  <data name="responsetime_us" xml:space="preserve">
+    <value>Response Time</value>
+  </data>
+  <data name="satisfaction" xml:space="preserve">
+    <value>解决满意度</value>
+  </data>
+  <data name="satisfaction_us" xml:space="preserve">
+    <value>Satisfaction</value>
+  </data>
+  <data name="score" xml:space="preserve">
+    <value>满意度评分</value>
+  </data>
+  <data name="score_us" xml:space="preserve">
+    <value>Score</value>
+  </data>
+  <data name="sex" xml:space="preserve">
+    <value>性别</value>
+  </data>
+  <data name="sex_us" xml:space="preserve">
+    <value>Sex</value>
+  </data>
+  <data name="tel" xml:space="preserve">
+    <value>电话</value>
+  </data>
+  <data name="tel_us" xml:space="preserve">
+    <value>Tel</value>
+  </data>
+  <data name="tocomment" xml:space="preserve">
+    <value>去评价</value>
+  </data>
+  <data name="tocomment_us" xml:space="preserve">
+    <value>Go to comment</value>
+  </data>
+  <data name="total" xml:space="preserve">
+    <value>总数</value>
+  </data>
+  <data name="total_us" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="username" xml:space="preserve">
+    <value>用户名</value>
+  </data>
+  <data name="username_us" xml:space="preserve">
+    <value>Account</value>
+  </data>
+  <data name="userrigister" xml:space="preserve">
+    <value>用户注册</value>
+  </data>
+  <data name="userrigister_us" xml:space="preserve">
+    <value>Rigister</value>
+  </data>
+  <data name="validcode" xml:space="preserve">
+    <value>验证码</value>
+  </data>
+  <data name="validcode_us" xml:space="preserve">
+    <value>ValidCode</value>
+  </data>
+  <data name="viewdetails" xml:space="preserve">
+    <value>查看详情</value>
+  </data>
+  <data name="viewdetails_us" xml:space="preserve">
+    <value>View details</value>
+  </data>
+  <data name="year" xml:space="preserve">
+    <value>今年</value>
+  </data>
+  <data name="year_us" xml:space="preserve">
+    <value>Year</value>
+  </data>
+</root>

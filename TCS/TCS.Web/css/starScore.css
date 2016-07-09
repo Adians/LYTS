@@ -1,0 +1,46 @@
+﻿ .rev-star {
+            margin: 1px 0 0 3px;
+        }
+
+        .icon-eva-1 {
+            background-position: -344px -288px;
+            width: 84px;
+            height: 17px;
+        }
+
+        .icon-eva-2 {
+            background-position: -344px -305px;
+            width: 84px;
+            height: 17px;
+        }
+
+        .icon-eva-3 {
+            background-position: -344px -322px;
+            width: 84px;
+            height: 17px;
+        }
+
+        .icon-eva-4 {
+            background-position: -344px -338px;
+            width: 84px;
+            height: 17px;
+        }
+
+        .icon-eva-5 {
+            background-position: -344px -354px;
+            width: 84px;
+            height: 17px;
+        }
+
+        .icon-eva-6 {
+            background-position: -344px -370px;
+            width: 84px;
+            height: 17px;
+        }
+
+        .icon-main {
+            background-image: url(../img/style-icon-all.png);
+            background-repeat: no-repeat;
+            display: inline-block;
+            vertical-align: middle;
+        }

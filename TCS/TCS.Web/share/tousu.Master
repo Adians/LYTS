@@ -1,0 +1,295 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="tousu.master.cs" Inherits="TCS.Web.share.tousu" %>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>旅游投诉网</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blue Moon - Responsive Admin Dashboard" />
+    <meta name="keywords" content="Notifications, Admin, Dashboard, Bootstrap3, Sass, transform, CSS3, HTML5, Web design, UI Design, Responsive Dashboard, Responsive Admin, Admin Theme, Best Admin UI, Bootstrap Theme, Wrapbootstrap, Bootstrap, bootstrap.gallery" />
+    <meta name="author" content="Bootstrap Gallery" />
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/new.css" rel="stylesheet">
+    <link href="/css/charts-graphs.css" rel="stylesheet">
+    <link href="fonts/font-awesome.min.css" rel="stylesheet">
+    <link href="js/layer-v2.3/layer/skin/layer.css" rel="stylesheet" />
+    <!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        body {
+            font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+        }
+
+        header p {
+            width: 75%;
+            margin-left: 12%;
+        }
+
+            header p span, header p a {
+                color: white;
+                margin-left: 22px;
+            }
+
+        footer ul {
+            margin-left: 23.5%;
+        }
+
+            footer ul li {
+                color: white;
+                margin-left: 22px;
+            }
+
+            footer ul li {
+                float: left;
+            }
+
+        footer p {
+            text-align: center;
+        }
+       
+    </style>
+    <asp:ContentPlaceHolder runat="server" ID="head"></asp:ContentPlaceHolder>
+</head>
+
+<body>
+
+    <!-- Header Start -->
+    <header>
+        <!--<a href="index.html" class="logo">
+        <img src="img/logo.png" alt="Logo"/>
+      </a>-->
+        <%if (userName == string.Empty)
+            {%>
+        <p>
+            <span><%=language!="zh_us"?zh_us.welcome:zh_us.welcome_us %></span><a href="login.aspx"><%=language!="zh_us"?zh_us.login:zh_us.login_us %></a>   <a href="register.aspx"><%=language!="zh_us"?zh_us.register:zh_us.register_us %></a>  <span style="float: right;">
+                <%if (language !="zh_us")
+                    {%>
+                <a href="javascript:setLanguage('zh_us')"><b>English</b></a>
+                <% }
+                    else
+                    { %>
+                <a href="javascript:setLanguage('zh_cn')"><b>中文</b></a>
+                <%} %>
+                <a href="javascript:feedback();"><%=language!="zh_us"?zh_us.feedback:zh_us.feedback_us %></a></span>
+        </p>
+        <% }
+            else
+            { %>
+        <p><span><%=language!="zh_us"?zh_us.welcome:zh_us.welcome_us %></span><a href="usercenter.aspx"><%=userName %></a>   <a href="logout.aspx"><%=language!="zh_us"?zh_us.logout:zh_us.logout_us %></a>  <span style="float: right;">
+            <%if (language !="zh_us")
+                    {%>
+                <a href="javascript:setLanguage('zh_us')"><b>English</b></a>
+                <% }
+                    else
+                    { %>
+                <a href="javascript:setLanguage('zh_cn')"><b>中文</b></a>
+                <%} %>
+            <a href="usercenter.aspx"><%=language!="zh_us"?zh_us.usercenter:zh_us.usercenter_us %></a>  <a href="javascript:feedback();"><%=language!="zh_us"?zh_us.feedback:zh_us.feedback_us %></a></span> </p>
+        <%} %>
+    </header>
+    <!-- Header End -->
+
+    <!-- Main Container start -->
+    <div class="dashboard-container">
+
+        <div class="container" style="padding-left: 0px; padding-right: 0px;">
+            <!-- Top Nav Start -->
+
+            <div id='cssmenu'>
+
+                <ul style="float: left; padding-left: 10%; margin-top: 10px; margin-bottom: 10px;">
+                    <li id="newLogo" class="hidden-sm hidden-xs" style="width: 159px; height: 67px; margin-left: 50px; margin-right: 25px;">
+                        <img src="img/lytsw_body.png" width="159px" height="67px" />
+                    </li>
+                    <li class="active">
+                        <a href="index.aspx">
+                            <i class="fa fa-align-justify"></i>
+                            <%=language!="zh_us"?zh_us.index:zh_us.index_us %>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href='notice.aspx'><i class="fa fa-rss-square"></i><%=language!="zh_us"?zh_us.notice:zh_us.notice_us %></a>
+
+                    </li>
+                    <li class="active">
+                        <a href='tousulist.aspx'><i class="fa fa-list-alt"></i><%=language!="zh_us"?zh_us.complaint:zh_us.complaint_us %></a>
+
+                    </li>
+                    <li class="active">
+                        <a href='tousu-statistics.aspx'><i class="fa fa-dashboard"></i><%=language!="zh_us"?zh_us.statistics:zh_us.statistics_us %></a>
+
+                    </li>
+                    <li class="active">
+                        <a href='contactus.aspx'><i class="fa fa-phone-square"></i><%=language!="zh_us"?zh_us.contactus:zh_us.contactus_us %></a>
+
+                    </li>
+                    <li class="active">
+                        <a href="tousupublish.aspx">
+                            <i class="fa fa-pencil-square-o"></i>
+                            <%=language!="zh_us"?zh_us.publish:zh_us.publish_us %>
+                        </a>
+                    </li>
+
+                </ul>
+
+
+            </div>
+            <!-- Top Nav End -->
+
+
+            <div style="background-color: #f7f7f7; /*min-height: 800px; */">
+                <!-- Dashboard Wrapper Start -->
+                <div class="dashboard-wrapper ">
+                    <!-- 内容部分开始 -->
+
+                    <asp:ContentPlaceHolder runat="server" ID="body"></asp:ContentPlaceHolder>
+
+                    <!-- 内容部分结束 -->
+
+                    <!-- Right Sidebar End -->
+                </div>
+            </div>
+
+            <!-- Dashboard Wrapper End -->
+        </div>
+        <div style="clear: both;"></div>
+        <%if (language != "zh_us")
+            { %>
+        <footer>
+            <ul class="hidden-sm hidden-xs">
+                <li><a href="#">关于我们</a></li>
+                <li><a href="#">律师顾问团</a></li>
+                <li><a href="#">媒体关注</a></li>
+                <li><a href="#">投诉人撤帖须知</a></li>
+                <li><a href="#">网站帮助</a></li>
+                <li><a href="#">旅游政策</a></li>
+                <li><a href="#">旅游资讯</a></li>
+                <li><a href="/admin/login.aspx">后台系统</a></li>
+                <li><a href="#">网站统计</a></li>
+            </ul>
+            <div style="clear: both;"></div>
+            <p>Copyright © 2015 - 2016 旅游投诉网 ALL RIGHTS RESERVED　桂ICP备8888888888号</p>
+        </footer>
+
+        <%}
+    else
+    {%>
+        <footer>
+            <ul class="hidden-sm hidden-xs">
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Lawyers Group</a></li>
+                <li><a href="#">Media focus</a></li>
+                <li><a href="#">cmplt&Notice </a></li>
+                <li><a href="#">Web help</a></li>
+                <li><a href="#">Policy</a></li>
+                <li><a href="#">Article</a></li>
+                <li><a href="/admin/login.aspx">System</a></li>
+                <li><a href="#">Website Statistics </a></li>
+            </ul>
+            <div style="clear: both;"></div>
+            <p>Copyright © 2015 - 2016 LYTSW ALL RIGHTS RESERVED　GUI ICP 8888888888</p>
+        </footer>
+        
+        <%} %>
+        
+
+    </div>
+
+    <!-- Main Container end -->
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/layer-v2.3/layer/layer.js"></script>
+    <script src="js/jquery.scrollUp.js"></script>
+
+    <!-- jQuery UI JS -->
+    <script src="/js/jquery-ui-v1.10.3.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/menu.js"></script>
+    <script src="js/custom-index2.js"></script>
+    <script type="text/javascript">
+        //ScrollUp
+        $(function () {
+            $.scrollUp({
+                scrollName: 'scrollUp', // Element ID
+                topDistance: '150', // Distance from top before showing element (px)
+                topSpeed: 300, // Speed back to top (ms)
+                animation: 'fade', // Fade, slide, none
+                animationInSpeed: 400, // Animation in speed (ms)
+                animationOutSpeed: 400, // Animation out speed (ms)
+                scrollText: 'Top', // Text for element
+                activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+            });
+        });
+        function MasterMsg(n) {
+            //layer.msg('请登录!', { icon: 2, time: 0 });
+            if(n==1){
+                document.location.href = "/login.aspx";
+            }
+            if(n==2){
+                layer.msg('提交成功!', { icon: 1, time: 1000 });
+            }
+            if (n == 3) {
+                layer.msg('提交失败!', { icon: 2, time: 1000 });
+            }
+            
+        }
+
+        function setLanguage(name) {
+            
+            $.post("handler/SetLanguage.ashx", { language: name }, function (data) {
+
+                if (data == "ok") {
+                    //alert(data);
+                    history.go(0);
+                }
+            });
+        }
+        function feedback() {
+
+            var title = "意见反馈";
+            var w = 600;
+            var h = 300;
+            var url = "/feedbackbox.aspx";
+
+            if (title == null || title == '') {
+                title = false;
+            };
+            if (url == null || url == '') {
+                url = "";
+            };
+            if (w == null || w == '') {
+                w = 800;
+            };
+            if (h == null || h == '') {
+                h = ($(window).height() - 50);
+            };
+
+            layer.open({
+                type: 2,
+                area: [w + 'px', h + 'px'],
+                fix: false, //不固定
+                maxmin: true,
+                shade: 0.4,
+                title: title,
+                content: url,
+                success: function (layero, index) {
+                    var body = layer.getChildFrame('body', index);
+                    var iframeWin = window[layero.find('iframe')[0]['name']]; //得到iframe页的窗口对象，执行iframe页的方法：
+                }
+            });
+
+        }
+    </script>
+    <asp:ContentPlaceHolder runat="server" ID="foot">
+    </asp:ContentPlaceHolder>
+</body>
+</html>
